@@ -1,0 +1,150 @@
+# ==========================================
+# Production Linux Server Automation
+# ==========================================
+
+# ------------------------------------------
+# Secrets & Environment Variables
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+
+*.secret
+*.secrets
+secrets/
+credentials/
+private/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# SSH private keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.pub
+
+# ------------------------------------------
+# Logs
+# ------------------------------------------
+logs/
+*.log
+*.log.*
+log/
+*.out
+*.err
+
+# ------------------------------------------
+# Generated Runtime Files
+# ------------------------------------------
+runtime/
+run/
+tmp/
+temp/
+*.pid
+*.sock
+
+# ------------------------------------------
+# Generated Configuration
+# Keep templates/examples in Git,
+# ignore machine-generated configs
+# ------------------------------------------
+generated/
+rendered/
+*.generated
+*.generated.*
+
+# ------------------------------------------
+# Backups
+# ------------------------------------------
+backups/
+backup/
+*.bak
+*.backup
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# ------------------------------------------
+# Deployment Artifacts
+# ------------------------------------------
+artifacts/
+releases/
+dist/
+build/
+
+# ------------------------------------------
+# Temporary Files
+# ------------------------------------------
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+.DS_Store
+
+# ------------------------------------------
+# Shell Script Debug / Output Files
+# ------------------------------------------
+*.trace
+*.debug
+debug/
+output/
+
+# ------------------------------------------
+# Local Server / Machine Information
+# ------------------------------------------
+server-info/
+machine-info/
+inventory.local
+hosts.local
+
+# ------------------------------------------
+# Local Development Overrides
+# ------------------------------------------
+*.local
+*.override
+config.local.*
+
+# ------------------------------------------
+# IDE / Editor
+# ------------------------------------------
+.idea/
+.vscode/
+*.iml
+
+# ------------------------------------------
+# OS Files
+# ------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------
+# Test Coverage / Reports
+# ------------------------------------------
+coverage/
+reports/
+
+# ------------------------------------------
+# Terraform (if added later)
+# ------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# ------------------------------------------
+# Ansible (if added later)
+# ------------------------------------------
+*.retry
+
+# ------------------------------------------
+# Docker local overrides (if added later)
+# ------------------------------------------
+docker-compose.override.yml
+.idea
